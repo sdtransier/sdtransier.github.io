@@ -1,43 +1,46 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: sans-serif;
+    color: #7f8c8d;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
+
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 2.25rem;
+    color:#ecf0f1;
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+
+h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
 }
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 1000px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #2c3e50;
+    color: whitesmoke;
+}
+
+header img {
+    width: 500px;
+    height: auto;
+    float: right;
+}
+
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
+    font-size: 0.75em;
+    color: #ecf0f1;
 }
