@@ -30,7 +30,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: #2c3e50;
+    background-color: #636e72;
     color: whitesmoke;
 }
 
@@ -41,6 +41,6 @@ header img {
 }
 
 footer {
-    font-size: 0.75em;
+    font-size: 0.80em;
     color: #ecf0f1;
 }
