@@ -1,0 +1,16 @@
+h1 { 
+    font-family: 'Coda Caption', sans-serif; 
+}
+
+h2, h3 {
+    font-family: 'Sarabun', sans-serif;
+}
+
+p, nav {
+    font-family: 'Noto Serif SC', serif;
+}
+
+header img, .headings {
+    display: inline-block;
+	vertical-align: middle;
+}
