@@ -39,6 +39,20 @@ nav li {
     max-width: 60%;
 }
 
+main {
+    margin: 40pt;
+}
+
+article img {
+    float: right;
+    width: 40%;
+    margin: 1em;
+}
+
+article {
+    background-color: azure;
+    padding: 1.5em;
+}
 
 @media only screen and (max-width: 699px) {
     nav ul, .five-day-forecast {
