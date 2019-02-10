@@ -1,2 +1,10 @@
 
-@media only screen and (min-width: 700px)
+@media only screen and (min-width: 700px) {
+    nav li {
+        display: inline;
+    }
+
+    nav .menu-button {
+        display: none;
+    }
+}
