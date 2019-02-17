@@ -6,11 +6,14 @@
         <meta name="description" content="The town website for Preston, Idaho">
         <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Noto+Serif+SC|Sarabun" rel="stylesheet">
         
-        <!--
-        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small-5.css">
-        <link rel="stylesheet" href="css/large-5.css">
+        <link rel="stylesheet" href="css/small-6.css">
+        <link rel="stylesheet" href="css/large-6.css">
+
+        <!-- Javascript -->
+        <script src="scripts/hamburgermenu.js"></script>
+
         <title>Town Website of Preston, Idaho | Idaho Info Center</title>
     </head>
     <body>
@@ -21,11 +24,11 @@
                 <div class="motto">One Stop for All Your Idaho Information</div>
             </div>
         </header>
-        <nav>
-            <a class="menu-button" href="#">Menu</a>
-            <ul>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()" class="menu-button" href="#">&#9776; Menu</button>
+            <ul id="primaryNav" class="">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li class="active"><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -46,7 +49,37 @@
                 <h3>
                     5 Day Forecast
                 </h3>
-                <img src="images/five-day-forecast-placeholder.png">
+                <table>
+                    <tr>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img scr="#" alt="Sunny weather">
+                            89º F
+                        </td>
+                        <td>
+                            <img scr="#" alt="Sunny weather">
+                            84º F
+                        </td>
+                        <td>
+                            <img scr="#" alt="Sunny weather">
+                            85º F
+                        </td>
+                        <td>
+                            <img scr="#" alt="Sunny weather">
+                            99º F
+                        </td>
+                        <td>
+                            <img scr="#" alt="Sunny weather">
+                            89º F
+                        </td>
+                    </tr>
+                </table>
             </section>
             <article>
                 <h3>High Winds Hitting Preston This Weekend</h3>
@@ -70,7 +103,9 @@
         <footer>
             <p>
                 Content of Footer
+                <span id="currentDate"></span>
             </p>
         </footer>
+        <script src="scripts/currentdate.js"></script>
     </body>
 </html>

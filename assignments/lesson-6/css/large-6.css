@@ -1,7 +1,14 @@
 
 @media only screen and (min-width: 700px) {
     nav li {
-        display: inline;
+        float: left;
+        width: auto%;
+    }
+
+    nav ul.hide { display: block; }
+
+    nav a {
+        padding: .5rem 1rem;
     }
 
     nav .menu-button {

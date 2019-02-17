@@ -1,3 +1,43 @@
+/* Navigation */
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #eee;
+}
+
+nav { 
+    background-color: #333; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav li { list-style-type: none; }
+
+nav li.active { background-color: grey;}
+
+nav a {
+    display: block;
+    padding: .8em 2%;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: white;
+    background-color: green;    
+}
+
 h1 { 
     font-family: 'Coda Caption', sans-serif; 
 }
@@ -20,20 +60,6 @@ header {
     padding: 1.5em;
 }
 
-nav {
-    background-color: #c7e9f1;
-    padding: .1em;
-}
-
-a:hover {
-    color: #981231;
-    background-color: rgb(255, 223, 196);    
-}
-
-nav li {
-    margin: .2em;
-}
-
 .five-day-forecast img {
     width: 40%;
     max-width: 60%;
@@ -54,12 +80,25 @@ article {
     padding: 1.5em;
 }
 
-@media only screen and (max-width: 699px) {
-    nav ul, .five-day-forecast {
-        display: none;
-    }
+td { text-align: center; }
 
-    nav {
-        padding: .1em;
+td img { 
+    display: block; 
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid green;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 699px) {
+    .five-day-forecast {
+        display: none;
     }
 }
