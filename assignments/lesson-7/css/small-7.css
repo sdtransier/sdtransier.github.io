@@ -1,0 +1,106 @@
+/* Navigation */
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #eee;
+}
+
+nav { 
+    background-color: #333; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav li { list-style-type: none; }
+
+nav li.active { background-color: grey;}
+
+nav a {
+    display: block;
+    padding: .8em 2%;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: white;
+    background-color: green;    
+}
+
+.heroPicture { width: 100%; }
+
+h1 { 
+    font-family: 'Coda Caption', sans-serif; 
+}
+
+h2, h3 {
+    font-family: 'Sarabun', sans-serif;
+}
+
+p, nav, .motto {
+    font-family: 'Noto Serif SC', serif;
+}
+
+header img, .headings {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header {
+    background-color: #25cbf5;
+    padding: 1.5em;
+}
+
+.five-day-forecast img {
+    width: 40%;
+    max-width: 60%;
+}
+
+main {
+    margin: 40pt;
+}
+
+article img {
+    float: right;
+    width: 40%;
+    margin: 1em;
+}
+
+article {
+    background-color: azure;
+    padding: 1.5em;
+}
+
+td { text-align: center; }
+
+td img { 
+    display: block; 
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid green;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 699px) {
+    .five-day-forecast {
+        display: none;
+    }
+}
