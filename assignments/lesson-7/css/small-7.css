@@ -99,7 +99,7 @@ table, th, td {
     clear: both;
 }
 
-@media only screen and (max-width: 32.4em) {
+@media only screen and (max-width: 319px) {
     .five-day-forecast {
         display: none;
     }
