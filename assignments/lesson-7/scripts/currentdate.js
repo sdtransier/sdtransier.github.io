@@ -1,10 +1,10 @@
 // Display current date in footer
-var today = new Date();
+let today = new Date();
 
-var dayOfWeek = today.getDay();
-var day = today.getDate();
-var month = today.getMonth();
-var year = today.getFullYear();
+let dayOfWeek = today.getDay();
+let day = today.getDate();
+let month = today.getMonth();
+let year = today.getFullYear();
 
 // Determine day of week
 switch (dayOfWeek) {
