@@ -14,4 +14,8 @@
     nav .menu-button {
         display: none;
     }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

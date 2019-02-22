@@ -99,6 +99,14 @@ table, th, td {
     clear: both;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    
+}
+
+
 @media only screen and (max-width: 319px) {
     .five-day-forecast {
         display: none;
