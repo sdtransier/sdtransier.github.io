@@ -1,4 +1,5 @@
 /* Navigation */
+
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -8,7 +9,10 @@ nav button {
 }
 
 nav { 
-    background-color: #333; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7f8c8d; 
 }
 
 nav ul {
@@ -22,7 +26,7 @@ nav ul.hide {
 
 nav li { list-style-type: none; }
 
-nav li.active { background-color: grey;}
+nav li.active { background-color: #34495e;}
 
 nav a {
     display: block;
@@ -35,10 +39,18 @@ nav a {
 
 nav a:hover {
     color: white;
-    background-color: green;    
+    background-color: #2c3e50;    
 }
 
-.heroPicture { width: 100%; }
+header {
+    background-color: #1abc9c;
+    padding: 1.5em;
+}
+
+
+.heroPicture img { 
+    width: 100%;
+}
 
 h1 { 
     font-family: 'Coda Caption', sans-serif; 
@@ -48,8 +60,57 @@ h2, h3 {
     font-family: 'Sarabun', sans-serif;
 }
 
-p, nav, .motto {
+p, nav, .motto, .details {
     font-family: 'Noto Serif SC', serif;
+}
+
+.motto {
+    font-style: italic;
+}
+
+main {
+    margin: 40pt;
+}
+
+.weatherSummary {
+    width: 20%;
+    background-color: rgba(26, 188, 156, 0.5);
+    padding: 1em;
+    min-width: 50;
+    display: grid;
+    justify-content: center;
+}
+
+.weatherSummary h3 {
+    text-align: center;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.name {
+    align-items: left;
+    justify-items: end;
+}
+
+.value {
+    align-items: right;
+}
+
+.summaryAndHero {
+    position: relative;
+} 
+
+.heroPicture {
+    
+}
+
+.weatherSummary {
+    position: relative;
+    z-index: 1000;
 }
 
 header img, .headings {
@@ -57,18 +118,9 @@ header img, .headings {
     vertical-align: middle;
 }
 
-header {
-    background-color: #25cbf5;
-    padding: 1.5em;
-}
 
 .five-day-forecast img {
     width: 40%;
-    max-width: 60%;
-}
-
-main {
-    margin: 40px;
 }
 
 article img {
@@ -102,10 +154,52 @@ table, th, td {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 20px;
-    
 }
 
+figcaption {
+    padding: .5em 0 .5em 1em;
+    font-style: italic;
+    color: #747474;
+    font-family: sans-serif;
+    font-size: .75em;
+}
+
+.footerUpperSection .footerLowerSection {
+    display: flex;
+}
+
+
+.footerUpperSection {
+    display: flex;
+    background-color: rgba(26, 188, 156, 0.7);
+    padding: 1em;
+    margin: 0;
+}
+
+.footerLowerSection {
+    background-color: #7f8c8d;
+    padding: 1em;
+    text-align: center;
+}
+
+.footerLowerSection p, .footerLowerSection div, .footerUpperSection { 
+    font-size: .8em;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.footerContactInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.footerPhoneNumber {
+    padding-top: 1em;
+}
+
+.townName {
+    text-align: center;
+}
 
 @media only screen and (max-width: 319px) {
     .five-day-forecast {

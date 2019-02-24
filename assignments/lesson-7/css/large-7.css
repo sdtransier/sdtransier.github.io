@@ -2,7 +2,7 @@
 @media only screen and (min-width: 960px) {
     nav li {
         float: left;
-        width: auto%;
+        width: auto;
     }
 
     nav ul.hide { display: block; }
@@ -18,4 +18,13 @@
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .gallery figure {
+        box-shadow: 0 0 25px rgb(134, 128, 128);
+    }
+
+    .gallery figure:hover {
+        box-shadow: 0 0 45px rgb(92, 92, 92);
+    }
+    
 }
