@@ -1,0 +1,30 @@
+
+@media only screen and (min-width: 960px) {
+    nav li {
+        float: left;
+        width: auto;
+    }
+
+    nav ul.hide { display: block; }
+
+    nav a {
+        padding: .5rem 1rem;
+    }
+
+    nav .menu-button {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery figure {
+        box-shadow: 0 0 25px rgb(134, 128, 128);
+    }
+
+    .gallery figure:hover {
+        box-shadow: 0 0 45px rgb(92, 92, 92);
+    }
+    
+}
