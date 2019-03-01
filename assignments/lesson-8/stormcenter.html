@@ -17,7 +17,7 @@
         <script src="scripts/windchill.js"></script>
         <script src="scripts/currentdate.js"></script>
 
-        <title>Weather Gallery of Idaho | Idaho Info Center</title>
+        <title>Storm Center | Idaho Info Center</title>
     </head>
     <body>
         <header>
@@ -31,43 +31,69 @@
             <button onclick="toggleMenu()" class="menu-button" href="#">&#9776; Menu</button>
             <ul id="primaryNav" class="">
                 <li><a href="#">Home</a></li>
-                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li class="active"><a href="#">Gallery</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
         <main>
             <h2>
-                Weather Gallery
+                Storm Center Reporting
             </h2>
-            <div class="gallery"> 
-                <figure>
-                    <img src="images/gallery/clear-skies-960px.jpeg" alt="Clear skies">
-                    <figcaption>Clear skies</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/cloudy-960px.jpeg" alt="Cloudy skies">
-                    <figcaption>Cloudy Skies</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/snow-covered-roads-960px.jpeg" alt="Snow-covered roads">
-                    <figcaption>Snow-Covered Roads</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/snow-piles-960px.jpeg" alt="Piles of snow on the sides of the roads">
-                    <figcaption>Piles of Snow by the Road</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/snowy-clear-roads-960px.jpeg" alt="Clear roads surrounded by snow">
-                    <figcaption>Clear Roads After Snowstorm</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/partly-cloudy-960px.jpeg" alt="Partly Cloudy Skies">
-                    <figcaption>Partly Cloudy Skies</figcaption>
-                </figure>   
-            </div>
+            <form id="stormReportForm">
+                <div id="fullnameField"
+                    <label for="fullname">Enter your full name: </label>
+                    <input type="text" name="fullname" required pattern="[A-Za-z]{5,}">
+                </div>
+                <div id="emailField">
+                    <label for="email">Email address: </label>
+                    <input type="email" name="email" placeholder="storms@IdahoInfoCenter.com">
+                </div>
+                <div id="phoneNumberField">
+                    <label for="phoneNumber">Phone number: </label>
+                    <input type="tel" name="phoneNumber" required>
+                </div>
+                <div id="zipCodeField">
+                    <label for="zipCode">Zip Code</label>
+                    <input type="number" name="zipCode" required>
+                </div>
+                <div id="stormDateField">
+                    <label for="stormDate">Storm Date: </label>
+                    <input type="date" name="stormDate">
+                </div>
+                <div id="stormTypeField">
+                    <label for="stormType">Storm Type</label>
+                    <input list="stormType" name="stormType">
+                    <datalist id="stormTypeList">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+                <div id="stormSeverityField">
+                    <label for="stormSeverity">Storm Severity</label>
+                    <input type="range" name="stormSeverity" min="1" max="10">
+                    <datalist id="tickmarks">
+                            <option value="0" label="0%">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50" label="50%">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100" label="100%">
+                          </datalist>
+                </div>
+
+                <button id="submitButton">Submit</button>
+            </form>
         </main>
         <footer>
             <div class="footerLowerSection">
