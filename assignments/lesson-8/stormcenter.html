@@ -45,7 +45,7 @@
             <form id="stormReportForm">
                 <div id="fullnameField"
                     <label for="fullname">Enter your full name: </label>
-                    <input type="text" name="fullname" required pattern="[A-Za-z]{5,}">
+                    <input type="text" name="fullname" required pattern="[A-Za-z\s]{5,}">
                 </div>
                 <div id="emailField">
                     <label for="email">Email address: </label>
@@ -66,7 +66,7 @@
                 <div id="stormTypeField">
                     <label for="stormType">Storm Type</label>
                     <input list="stormType" name="stormType">
-                    <datalist id="stormTypeList">
+                    <datalist id="stormType">
                         <option value="Flash Flood">
                         <option value="Hail">
                         <option value="Hurricane">
