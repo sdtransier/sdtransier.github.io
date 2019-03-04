@@ -38,18 +38,18 @@
 
         // Populate the header 
         function populateHeader(jsonObj) {
-            var myH1 = document.createElement('h1');
+            let myH1 = document.createElement('h1');
             myH1.textContent = jsonObj['squadName'];
             header.appendChild(myH1);
         
-            var myPara = document.createElement('p');
+            let myPara = document.createElement('p');
             myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
             header.appendChild(myPara);
         }
 
         // Create the hero information cards
         function showHeroes(jsonObj) {
-            var heroes = jsonObj['members'];
+            let heroes = jsonObj['members'];
 
             for (let i = 0; i < heroes.length; i++) {
                 let myArticle = document.createElement('article');
