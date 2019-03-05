@@ -212,6 +212,10 @@ figcaption {
     text-align: center;
 }
 
+.townInfo section {
+    display: flex;
+}
+
 @media only screen and (max-width: 319px) {
     .five-day-forecast {
         display: none;
