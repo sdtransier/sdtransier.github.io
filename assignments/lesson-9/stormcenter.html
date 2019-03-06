@@ -21,7 +21,7 @@
     <body>
         <header>
             <img src="images/sun-header-logo.png" alt="sun logo">
-            <div class="headings">
+            <section class="headings">
                 <h1>Idaho Info Center</h1>
                 <div class="motto">One Stop for All Your Idaho Information</div>
             </div>
@@ -29,7 +29,7 @@
         <nav class="clearfix">
             <button onclick="toggleMenu()" class="menu-button" href="#">&#9776; Menu</button>
             <ul id="primaryNav" class="">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
@@ -41,7 +41,7 @@
             <h2>
                 Storm Center Reporting
             </h2>
-            <form id="stormReportForm">
+            <form id="stormReportForm" action="thanks.html">
                 <div id="fullnameField"
                     <label for="fullname">Enter your full name: </label>
                     <input type="text" name="fullname" required pattern="[A-Za-z\s]{5,}">
@@ -90,6 +90,7 @@
                             <option value="100" label="100%">
                           </datalist>
                 </div>
+
 
                 <button id="submitButton">Submit</button>
             </form>
