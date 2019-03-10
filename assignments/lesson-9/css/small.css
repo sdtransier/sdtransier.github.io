@@ -216,6 +216,10 @@ figcaption {
     display: flex;
 }
 
+section h2 {
+    font-style: italic;
+}
+
 @media only screen and (max-width: 319px) {
     .five-day-forecast {
         display: none;
