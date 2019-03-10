@@ -1,8 +1,8 @@
-let section = document.querySelector('section');
+const section = document.querySelector('section');
 
 // Obtain the JSON
-let requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-let request = new XMLHttpRequest();
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
@@ -12,32 +12,34 @@ request.onload = function() {
     displayTowns(groupOfTowns);
 }
 
-// Create the hero information cards
+// Create the town information cards
 function displayTowns(jsonObj) {
     let towns = jsonObj['towns'];
-    
-    for (let i = 0; i < towns.length; i++) {
-        let myArticle = document.createElement('article');
-        let myH2 = document.createElement('h2');
-        let myPara1 = document.createElement('p');
-        let myPara2 = document.createElement('p');
-        let myPara3 = document.createElement('p');
-        let myPara4 = document.createElement('p');
+
+    towns.forEach(towns => {
+        if (towns.name == 'Preston' || towns.name == 'Soda Springs' || towns.name == 'Fish Haven') {
+            let myArticle = document.createElement('article');
+            let myH2 = document.createElement('h2');
+            let myPara1 = document.createElement('p');
+            let myPara2 = document.createElement('p');
+            let myPara3 = document.createElement('p');
+            let myPara4 = document.createElement('p');
 
 
-        myH2.textContent = towns[i].name;
-        myPara1.textContent = towns[i].motto;
-        myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-        myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
-        myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + "\"";
+            myH2.textContent = towns.name;
+            myPara1.textContent = towns.motto;
+            myPara2.textContent = 'Year Founded: ' + towns.yearFounded;
+            myPara3.textContent = 'Population: ' + towns.currentPopulation;
+            myPara4.textContent = 'Annual Rain Fall: ' + towns.averageRainfall + "\"";
 
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myPara4);
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
 
 
-        section.appendChild(myArticle);
-    }
+            section.appendChild(myArticle);
+        }
+    });
 }
