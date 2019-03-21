@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang=en-us>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <meta name="description" content="The town website for Preston, Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Noto+Serif+SC|Sarabun" rel="stylesheet">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+        <!-- Javascript -->
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+        <title>Storm Center | Idaho Info Center</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/sun-header-logo.png" alt="sun logo">
+            <section class="headings">
+                <h1>Idaho Info Center</h1>
+                <div class="motto">One Stop for All Your Idaho Information</div>
+            </div>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()" class="menu-button" href="#">&#9776; Menu</button>
+            <ul id="primaryNav" class="">
+                <li><a href="#">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>
+                Storm Center Reporting
+            </h2>
+            <form id="stormReportForm" action="thanks.html">
+                <div id="fullnameField"
+                    <label for="fullname">Enter your full name: </label>
+                    <input type="text" name="fullname" required pattern="[A-Za-z\s]{5,}">
+                </div>
+                <div id="emailField">
+                    <label for="email">Email address: </label>
+                    <input type="email" name="email" placeholder="storms@IdahoInfoCenter.com">
+                </div>
+                <div id="phoneNumberField">
+                    <label for="phoneNumber">Phone number: </label>
+                    <input type="tel" name="phoneNumber" required>
+                </div>
+                <div id="zipCodeField">
+                    <label for="zipCode">Zip Code</label>
+                    <input type="number" name="zipCode" required>
+                </div>
+                <div id="stormDateField">
+                    <label for="stormDate">Storm Date: </label>
+                    <input type="date" name="stormDate">
+                </div>
+                <div id="stormTypeField">
+                    <label for="stormType">Storm Type</label>
+                    <input list="stormType" name="stormType">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+                <div id="stormSeverityField">
+                    <label for="stormSeverity">Storm Severity</label>
+                    <input type="range" name="stormSeverity" min="1" max="10">
+                    <datalist id="tickmarks">
+                            <option value="0" label="0%">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50" label="50%">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100" label="100%">
+                          </datalist>
+                </div>
+
+
+                <button id="submitButton">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <div class="footerLowerSection">
+                <p>&copy; 2019 Idaho Info Center | Attributions | Spencer Transier</p>
+                <div id="currentDate"></div>
+            </div>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

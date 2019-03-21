@@ -1,0 +1,77 @@
+table {
+    font-family: 'Ubuntu', sans-serif;
+    border-collapse: collapse;
+    width: 280px;
+    box-shadow: 7px 7px 13px #357097;
+}
+
+table, td, th {
+    text-align: center;
+    padding: 7px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+/* ACME Wildwest */
+thead tr:first-child {
+    background: #7fb9c2;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Second row of the header */
+thead tr:nth-child(2) {
+    background: #628ca6;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Body Text Style */
+tbody {
+    font-size: .95em;
+    font-weight: 300;
+}
+
+/* Odd rows of the body */
+tbody tr:nth-child(odd) td {
+    background: #e7f0ed;
+}
+
+/* Even rows of the body */
+tbody tr:nth-child(even) td {
+    background: #e7ffed;
+}
+
+/* First column of the body */
+tbody tr td:first-child {
+    width: 40%;
+}
+
+/* Second column of the body */
+tbody tr td:nth-child(2) {
+    width: 20%;
+}
+
+/* Third column of the body */
+tbody tr td:nth-child(3) {
+    width: 40%;
+}
+
+/* Black Friday */
+tbody tr:nth-child(5) td:nth-child(1) {
+    font-style: italic;
+}
+
+/* $7,500 */
+tbody tr:nth-child(4) td:nth-child(3) {
+    background: #628ca6;
+    color: #fff;
+}
+
+/* Footer */
+tfoot {
+    background: #7fb9c2;
+    font-size: .75em;
+}
+
+
+

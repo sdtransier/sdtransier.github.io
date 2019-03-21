@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang=en-us>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <meta name="description" content="The town website for Preston, Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Noto+Serif+SC|Sarabun" rel="stylesheet">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+        <!-- Javascript -->
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+        <title>Weather Gallery of Idaho | Idaho Info Center</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/sun-header-logo.png" alt="sun logo">
+            <section class="headings">
+                <h1>Idaho Info Center</h1>
+                <div class="motto">One Stop for All Your Idaho Information</div>
+            </div>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()" class="menu-button" href="#">&#9776; Menu</button>
+            <ul id="primaryNav" class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>
+                Weather Gallery
+            </h2>
+            <div class="gallery"> 
+                <figure>
+                    <img src="images/gallery/clear-skies-960px.jpeg" alt="Clear skies">
+                    <figcaption>Clear skies</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery/cloudy-960px.jpeg" alt="Cloudy skies">
+                    <figcaption>Cloudy Skies</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery/snow-covered-roads-960px.jpeg" alt="Snow-covered roads">
+                    <figcaption>Snow-Covered Roads</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery/snow-piles-960px.jpeg" alt="Piles of snow on the sides of the roads">
+                    <figcaption>Piles of Snow by the Road</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery/snowy-clear-roads-960px.jpeg" alt="Clear roads surrounded by snow">
+                    <figcaption>Clear Roads After Snowstorm</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery/partly-cloudy-960px.jpeg" alt="Partly Cloudy Skies">
+                    <figcaption>Partly Cloudy Skies</figcaption>
+                </figure>   
+            </div>
+        </main>
+        <footer>
+            <div class="footerLowerSection">
+                <p>&copy; 2019 Idaho Info Center | Attributions | Spencer Transier</p>
+                <div id="currentDate"></div>
+            </div>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>
