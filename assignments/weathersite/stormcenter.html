@@ -89,9 +89,21 @@
                             <option value="100" label="100%">
                           </datalist>
                 </div>
+                <div id="stormRegionField">
+                    <label for="stormRegion">Storm Region</label>
+                    <select name="stormRegion">
+                        <option value="select-region" >Select Region...</option>
+                        <option value="yes">Yes</option>
+                        <option value="maybe">Maybe</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div id="additionalCommentsField">
+                    <label for="additionalComments">Additional Comments</label>
+                </div>
+                <textarea name="additionalComments"></textarea>
 
-
-                <button id="submitButton">Submit</button>
+                <button type="submit" id="submitButton">Submit</button>
             </form>
         </main>
         <footer>
