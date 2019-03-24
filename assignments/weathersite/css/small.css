@@ -20,13 +20,15 @@ nav ul {
     padding: 0;
 }
 
-nav ul.hide {
+nav .hide {
     display: none;
 }
 
-nav li { list-style-type: none; }
+nav li { 
+    list-style-type: none; 
+}
 
-nav li.active { background-color: #34495e;}
+nav .active { background-color: #34495e;}
 
 nav a {
     display: block;
@@ -67,6 +69,7 @@ h1 {
 
 h2, h3 {
     font-family: 'Sarabun', sans-serif;
+    text-align: center;
 }
 
 p, nav, .motto, .details {
@@ -78,7 +81,8 @@ p, nav, .motto, .details {
 }
 
 main {
-    margin: 40pt;
+    max-width: 75%;
+    margin: auto;
 }
 
 .weatherSummary {
@@ -88,10 +92,6 @@ main {
     min-width: 50;
     display: grid;
     justify-content: center;
-}
-
-.weatherSummary h3 {
-    text-align: center;
 }
 
 .details {
@@ -175,16 +175,13 @@ figcaption {
     width:100%;
 }
 
-.footerUpperSection .footerLowerSection {
-    display: flex;
-}
-
-
 .footerUpperSection {
     display: flex;
+    justify-content: center;
     background-color: rgba(26, 188, 156, 0.7);
     padding: 1em;
     margin: 0;
+    text-align: center;
 }
 
 .footerLowerSection {
@@ -221,8 +218,9 @@ section {
     border: .5em solid grey;
 }
 
-
-
+.map img {
+    max-width: 250px;
+}
 
 @media only screen and (max-width: 319px) {
     .five-day-forecast {
