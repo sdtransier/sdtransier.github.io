@@ -89,7 +89,6 @@ main {
     width: 20%;
     background-color: rgba(26, 188, 156, 0.5);
     padding: 1em;
-    min-width: 50;
     display: grid;
     justify-content: center;
 }
