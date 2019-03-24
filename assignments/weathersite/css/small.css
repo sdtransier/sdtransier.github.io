@@ -58,9 +58,9 @@ header img {
     padding: 1rem;
 }
 
-
 .heroPicture img { 
     width: 70%;
+    margin: auto;
 }
 
 h1 { 
