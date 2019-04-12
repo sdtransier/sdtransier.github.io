@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang=en-us>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <meta name="description" content="The informational website for the Temple Inn & Suites Hotel Chain.">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/normalize.css">     
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Temples | Temple Inn & Suites</title>
+    </head>
+    <body>
+        <nav>
+            <ul id="primaryNav" class="">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reception.html">Receptions</a></li>
+                <li><a href="missionaries.html">Missionaries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <!-- Space for JSON input -->
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2019 Temple Inn & Suites | Attributions | Created by Transier Consulting</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+        let section = document.querySelector('section');
+        
+        // Obtain the JSON
+        let requestURL = 'json/templeInfo.json';
+        let request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function() {
+            let superHeroes = request.response;
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
+        }
+
+        // Create the hero information cards
+        function showHeroes(jsonObj) {
+            let heroes = jsonObj['members'];
+
+            for (let i = 0; i < heroes.length; i++) {
+                let myArticle = document.createElement('article');
+                let myH2 = document.createElement('h2');
+                let myPara1 = document.createElement('p');
+                let myPara2 = document.createElement('p');
+                let myPara3 = document.createElement('p');
+                let myList = document.createElement('ul');
+
+                myH2.textContent = heroes[i].name;
+                myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+                myPara2.textContent = 'Age: ' + heroes[i].age;
+                myPara3.textContent = 'Superpowers: ';
+                
+                let superPowers = heroes[i].powers;
+                for (let j = 0; j < superPowers.length; j++) {
+                    let listItem = document.createElement('li');
+                    listItem.textContent = superPowers[j];
+                    myList.appendChild(listItem);
+                }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+
+                section.appendChild(myArticle);
+            }
+        }
+    </script>
+    </body>
+</html>

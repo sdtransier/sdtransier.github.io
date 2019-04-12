@@ -18,20 +18,60 @@ header h1 {
 
 nav {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	background-color: #F1C40F;
+	height: 3em;
+	font-size: 1.15em;
 }
 
 nav ul {
 	display: flex;
 	font-family: 'Montserrat', sans-serif;
-	justify-content: space-between;
-	list-style-type: none; 
+	margin: 0;
+	padding: 0;
 }
 
 nav li {
-	padding: .5em;
+	list-style-type: none; 
 }
+
+nav a {
+	text-decoration: none; 
+	color: #eee;
+    text-align: center;
+}
+
+nav .active { 
+	background-color: #4A69BD;
+	color: white;
+}
+	
+nav a:hover {
+    color: white;
+    background-color: #4A69BD;    
+}
+
+#reservationForm {
+	display: flex;
+	flex-direction: column;
+}
+
+#reservationForm div {
+	padding: .25em;
+}
+
+#reservationForm label {
+	font-family: 'Merriweather', serif;
+}
+
+footer {
+	display: grid;
+	background-color: #ECF0F1;
+	justify-content: center;
+}
+
+
+
 
 
 /*********************************

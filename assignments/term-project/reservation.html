@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang=en-us>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <meta name="description" content="The informational website for the Temple Inn & Suites Hotel Chain.">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/normalize.css">     
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Reservations | Temple Inn & Suites</title>
+    </head>
+    <body>
+        <nav>
+            <ul id="primaryNav" class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li class="active"><a href="#">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reception.html">Receptions</a></li>
+                <li><a href="missionaries.html">Missionaries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form id="reservationForm">
+                <div id="locationField"
+                    <label for="locationField">Search for a location: </label>
+                    <input type="text" name="locationField">
+                </div>
+                <div id="dateField">
+                    <label for="dateField">Dates of stay: </label>
+                    <input type="date" name="dateField">
+                </div>
+                <div id="numberOfRoomsField">
+                    <label for="numberOfRooms">Number of rooms: </label>
+                    <input type="number" name="numberOfRooms" required>
+                </div>
+                <div id="roomTypeField">
+                    <label for="roomTypeField">Type of rooms: </label>
+                    <input list="roomTypes" name="roomTypeField">
+                    <datalist id="roomType">
+                        <option value="Two Twins">
+                        <option value="Single Queen">
+                        <option value="Two Queens">
+                        <option value="Single Kind">
+                    </datalist>
+                </div>
+                <div id="fullnameField"
+                    <label for="fullname">Full name: </label>
+                    <input type="text" name="fullname" required>
+                </div>
+                 <div id="emailField">
+                    <label for="email">Email address: </label>
+                    <input type="email" name="email" placeholder="deseret@templeinn.com">
+                </div>
+                <div id="phoneNumberField">
+                    <label for="phoneNumber">Phone number: </label>
+                    <input type="tel" name="phoneNumber" required>
+                </div>
+                <div id="stateCountryField"
+                    <label for="stateCountryField">State or Country: </label>
+                    <input type="text" name="stateCountryField">
+                </div>
+                <div id="commentsField">
+                    <label for="commentsField">Special Accommodations or Comments: </label>
+                    <input type="textarea" name="commentsField">
+                </div>
+
+
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2019 Temple Inn & Suites | Attributions | Created by Transier Consulting</p>
+        </footer>
+    </body>
+</html>
+
+

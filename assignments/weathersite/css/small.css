@@ -11,7 +11,7 @@
 	nav { 
 	    display: flex;
 	    align-items: center;
-	    justify-content: center;
+	    justify-content: space-between;
 	    background-color: #7f8c8d; 
 	}
 	
@@ -36,7 +36,6 @@
 	    color: #eee;
 	    text-align: center;
 	    text-decoration: none;
-	
 	}
 	
 	nav a:hover {
