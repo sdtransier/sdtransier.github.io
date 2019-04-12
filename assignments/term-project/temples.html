@@ -63,9 +63,9 @@
 
         // Create the hero information cards
         function showTemples(jsonObj) {
-            let temples = jsonObj['temples'];
+            let temple = jsonObj['temples'];
 
-            for (let i = 0; i < temples.length; i++) {
+            for (let i = 0; i < temple.length; i++) {
                 let myArticle = document.createElement('article');
                 let myH2 = document.createElement('h2');
                 let myPara1 = document.createElement('p');
@@ -73,12 +73,12 @@
                 let myPara3 = document.createElement('p');
                 let myList = document.createElement('ul');
 
-                myH2.textContent = temples[i].templeName;
-                myPara1.textContent = 'Address: ' + temples[i].address;
-                myPara2.textContent = 'Telephone: ' + temples[i].telephone;
+                myH2.textContent = temple[i].templeName;
+                myPara1.textContent = 'Address: ' + temple[i].address;
+                myPara2.textContent = 'Telephone: ' + temple[i].telephone;
                 myPara3.textContent = 'Services: ';
                 
-                let serviceList = temples[i].services;
+                let serviceList = temple[i].services;
                 for (let j = 0; j < serviceList.length; j++) {
                     let listItem = document.createElement('li');
                     listItem.textContent = serviceList[j];
