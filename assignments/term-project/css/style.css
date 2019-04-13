@@ -26,6 +26,11 @@ nav {
 	font-size: 1.15em;
 }
 
+nav a:hover {
+    background-color: #4A69BD;
+}
+
+
 nav ul {
 	display: flex;
 	font-family: 'Montserrat', sans-serif;
@@ -34,7 +39,8 @@ nav ul {
 }
 
 nav li {
-	list-style-type: none; 
+	list-style-type: none;
+	padding: 1em;
 }
 
 nav a {
@@ -48,35 +54,44 @@ nav .active {
 	color: white;
 }
 	
-nav a:hover {
-    color: white;
-    background-color: #4A69BD;    
+
+main {
+	    max-width: 80%;
+	    margin: auto;
+	    padding: 20px;
+	}
+
+p, .serviceList, .form label {
+	font-family: 'Merriweather', serif;
 }
 
-#reservationForm {
+#submitButton {
+	width: 15%;
+}
+
+h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+button a {
+	text-decoration: none;
+	font-size: 2em;
+}
+
+.form {
 	display: flex;
 	flex-direction: column;
 }
 
-#reservationForm div {
+.form div {
 	padding: .25em;
 }
-
-#reservationForm label {
-	font-family: 'Merriweather', serif;
-}
-
-
 
 footer {
 	display: grid;
 	background-color: #ECF0F1;
 	justify-content: center;
 }
-
-
-
-
 
 /*********************************
 
