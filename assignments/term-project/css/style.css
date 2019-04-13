@@ -98,6 +98,17 @@ footer {
 	justify-content: center;
 }
 
+.grid-sections section {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 3em;
+}
+
+section article {
+	background-color: #ECF0F1;
+	padding: 1em;
+}
+
 /*********************************
 
 MEDIUM VIEW
@@ -106,7 +117,10 @@ MEDIUM VIEW
 
 @media only screen and (min-width: 640px) {
 
-
+	.grid-sections section {
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2em;
+	}
 }
 
 /*********************************
@@ -117,6 +131,8 @@ LARGE VIEW
 
 @media only screen and (min-width: 960px) {
 
-
-
+	.grid-sections section {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 3em;
+	}
 }
