@@ -109,6 +109,11 @@ section article {
 	padding: 1em;
 }
 
+.home-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
 /*********************************
 
 MEDIUM VIEW
@@ -120,6 +125,10 @@ MEDIUM VIEW
 	.grid-sections section {
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 2em;
+	}
+
+	.home-grid {
+	grid-template-columns: 1fr 1fr;
 	}
 }
 
@@ -135,4 +144,5 @@ LARGE VIEW
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 3em;
 	}
+
 }
