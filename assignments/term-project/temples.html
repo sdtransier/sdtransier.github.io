@@ -102,6 +102,8 @@
                 myPara6.textContent = 'History: ' + temple[i].history;
                 myPara7.textContent = 'Weather: ' + temple[i].weather;
                 myImage.setAttribute("src", temple[i].imagePath);
+                myImage.setAttribute("alt", temple[i].name);
+
 
                 myArticle.appendChild(myH2);
                 myArticle.appendChild(myPara1);
