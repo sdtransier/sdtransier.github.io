@@ -26,39 +26,83 @@
       "history" : "Announced in 1975 and dedicated in 1980.",
       "weather" : "70 degrees and Sunny"
     },
-    {
-      "name" : "Madame Uppercut",
-      "age" : 39,
-      "secretIdentity" : "Jane Wilson",
-      "powers" : [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
+   {
+      "templeName" : "Seattle Washington Temple",
+      "address" : "2808 148th Ave SE, Bellevue, WA 98007",
+      "telephone" : "425-643-5144",
+      "services" : [
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "sessionSchedule" : [
+        "Tuesday: 5:30am, 6:30am, every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Wednesay: 5:30am, 8:00am, every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Thursday and Friday: 8:00am, then every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Saturday: Every 30 minutes from 6:00am to 7:30pm"
+      ],
+      "closureSchedule" : [
+        "Thursday, 4 July 2019",
+        "Sunday, 18 August 2019 - Monday, 2 September 2019",
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+      ],
+      "history" : "Announced in 1975 and dedicated in 1980.",
+      "weather" : "70 degrees and Sunny"
     },
     {
-      "name" : "Eternal Flame",
-      "age" : 1000000,
-      "secretIdentity" : "Unknown",
-      "powers" : [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
-        "Teleportation",
-        "Interdimensional travel"
-      ]
+      "templeName" : "Seattle Washington Temple",
+      "address" : "2808 148th Ave SE, Bellevue, WA 98007",
+      "telephone" : "425-643-5144",
+      "services" : [
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "sessionSchedule" : [
+        "Tuesday: 5:30am, 6:30am, every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Wednesay: 5:30am, 8:00am, every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Thursday and Friday: 8:00am, then every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Saturday: Every 30 minutes from 6:00am to 7:30pm"
+      ],
+      "closureSchedule" : [
+        "Thursday, 4 July 2019",
+        "Sunday, 18 August 2019 - Monday, 2 September 2019",
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+      ],
+      "history" : "Announced in 1975 and dedicated in 1980.",
+      "weather" : "70 degrees and Sunny"
     },
     {
-      "name" : "Eternal Flame",
-      "age" : 1000000,
-      "secretIdentity" : "Unknown",
-      "powers" : [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
-        "Teleportation",
-        "Interdimensional travel"
-      ]
+      "templeName" : "Seattle Washington Temple",
+      "address" : "2808 148th Ave SE, Bellevue, WA 98007",
+      "telephone" : "425-643-5144",
+      "services" : [
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "sessionSchedule" : [
+        "Tuesday: 5:30am, 6:30am, every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Wednesay: 5:30am, 8:00am, every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Thursday and Friday: 8:00am, then every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Saturday: Every 30 minutes from 6:00am to 7:30pm"
+      ],
+      "closureSchedule" : [
+        "Thursday, 4 July 2019",
+        "Sunday, 18 August 2019 - Monday, 2 September 2019",
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+      ],
+      "history" : "Announced in 1975 and dedicated in 1980.",
+      "weather" : "70 degrees and Sunny"
     }
   ]
 }
