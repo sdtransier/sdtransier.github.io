@@ -27,9 +27,9 @@
       "weather" : "70 degrees and Sunny"
     },
    {
-      "templeName" : "Seattle Washington Temple",
-      "address" : "2808 148th Ave SE, Bellevue, WA 98007",
-      "telephone" : "425-643-5144",
+      "templeName" : "Dallas Texas Temple",
+      "address" : "6363 Willow Ln, Dallas, TX 75230",
+      "telephone" : "972-991-1273",
       "services" : [
         "Clothing rental available",
         "Cafeteria available",
@@ -43,19 +43,21 @@
         "Saturday: Every 30 minutes from 6:00am to 7:30pm"
       ],
       "closureSchedule" : [
+        "Monday, 22 April 2019 - Monday, 6 May 2019",
         "Thursday, 4 July 2019",
-        "Sunday, 18 August 2019 - Monday, 2 September 2019",
-        "Saturday, 5 October 2019",
-        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+        "Tuesday, 1 October 2019 - Monday, 11 November 2019",
+        "Wednesday, 27 November 2019 (Limited Hours)",
+        "Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019"
       ],
-      "history" : "Announced in 1975 and dedicated in 1980.",
-      "weather" : "70 degrees and Sunny"
+      "history" : "Announced in 1981 and dedicated in 1984.",
+      "weather" : "88 degrees and Partly Cloudy"
     },
     {
-      "templeName" : "Seattle Washington Temple",
-      "address" : "2808 148th Ave SE, Bellevue, WA 98007",
-      "telephone" : "425-643-5144",
+      "templeName" : "Idaho Falls Idaho Temple",
+      "address" : "1000 Memorial Dr, Idaho Falls, ID 83402",
+      "telephone" : "208-522-7669",
       "services" : [
         "Clothing rental available",
         "Cafeteria available",
@@ -69,22 +71,23 @@
         "Saturday: Every 30 minutes from 6:00am to 7:30pm"
       ],
       "closureSchedule" : [
-        "Thursday, 4 July 2019",
-        "Sunday, 18 August 2019 - Monday, 2 September 2019",
+        "Monday, 24 June 2019 - Monday, 8 July 2019",
         "Saturday, 5 October 2019",
-        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+        "Wednesday, 27 November 2019 (Limited Hours)",
+        "Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019"
       ],
-      "history" : "Announced in 1975 and dedicated in 1980.",
-      "weather" : "70 degrees and Sunny"
+      "history" : "Announced in 1937 and dedicated in 1945.",
+      "weather" : "23 degrees and Snowing"
     },
     {
-      "templeName" : "Seattle Washington Temple",
-      "address" : "2808 148th Ave SE, Bellevue, WA 98007",
-      "telephone" : "425-643-5144",
+      "templeName" : "Provo City Center Temple",
+      "address" : "50 South University Ave, Provo, UT 84601",
+      "telephone" : "801-343-2700",
       "services" : [
         "Clothing rental available",
-        "Cafeteria available",
+        "No cafeteria available",
         "No patron housing available",
         "Distribution center nearby"
       ],
@@ -95,14 +98,18 @@
         "Saturday: Every 30 minutes from 6:00am to 7:30pm"
       ],
       "closureSchedule" : [
-        "Thursday, 4 July 2019",
-        "Sunday, 18 August 2019 - Monday, 2 September 2019",
+        "Sunday, 23 June 2019 - Saturday, 6 July 2019",
+        "Wednesday, 24 July 2019",
         "Saturday, 5 October 2019",
-        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+        "Wednesday, 27 November 2019 (Limited Hours)",
+        "Thursday, 28 November 2019",
+        "Sunday, 1 December 2019 - Saturday, 14 December 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019",
+        "Wednesday, 1 January 2020"
       ],
-      "history" : "Announced in 1975 and dedicated in 1980.",
-      "weather" : "70 degrees and Sunny"
+      "history" : "Announced in 2011 and dedicated in 2016.",
+      "weather" : "45 degrees and Partly Sunny"
     }
   ]
 }
