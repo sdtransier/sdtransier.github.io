@@ -67,6 +67,7 @@
                 let myList3 = document.createElement('ul');
                 let myPara6 = document.createElement('p');
                 let myPara7 = document.createElement('p');
+                let myImage = document.createElement('img');
 
                 myH2.textContent = temple[i].templeName;
                 myPara1.textContent = 'Address: ' + temple[i].address;
@@ -100,6 +101,7 @@
 
                 myPara6.textContent = 'History: ' + temple[i].history;
                 myPara7.textContent = 'Weather: ' + temple[i].weather;
+                myImage.setAttribute("src", temple[i].imagePath);
 
                 myArticle.appendChild(myH2);
                 myArticle.appendChild(myPara1);
@@ -112,6 +114,8 @@
                 myArticle.appendChild(myList3);
                 myArticle.appendChild(myPara6);
                 myArticle.appendChild(myPara7);
+                myArticle.appendChild(myImage);
+
 
                 section.appendChild(myArticle);
             }
