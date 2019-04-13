@@ -25,7 +25,7 @@
       ],
       "history" : "Announced in 1975 and dedicated in 1980.",
       "weather" : "70 degrees and Sunny",
-      "imagePath" : "https://spencertransier.github.io/assignments/term-project/images/seattle-washington-temple.jpg"
+      "imagePath" : "images/seattle-washington-temple.jpg"
     },
    {
       "templeName" : "Dallas Texas Temple",
@@ -53,7 +53,8 @@
         "Tuesday, 31 December 2019"
       ],
       "history" : "Announced in 1981 and dedicated in 1984.",
-      "weather" : "88 degrees and Partly Cloudy"
+      "weather" : "88 degrees and Partly Cloudy",
+      "imagePath" : "images/dallas-texas-temple.jpg"
     },
     {
       "templeName" : "Idaho Falls Idaho Temple",
@@ -80,7 +81,8 @@
         "Tuesday, 31 December 2019"
       ],
       "history" : "Announced in 1937 and dedicated in 1945.",
-      "weather" : "23 degrees and Snowing"
+      "weather" : "23 degrees and Snowing",
+      "imagePath" : "images/idaho-falls-idaho-temple.jpg"
     },
     {
       "templeName" : "Provo City Center Temple",
@@ -110,7 +112,8 @@
         "Wednesday, 1 January 2020"
       ],
       "history" : "Announced in 2011 and dedicated in 2016.",
-      "weather" : "45 degrees and Partly Sunny"
+      "weather" : "45 degrees and Partly Sunny",
+      "imagePath" : "images/provo-city-center-temple.jpg"
     }
   ]
 }
