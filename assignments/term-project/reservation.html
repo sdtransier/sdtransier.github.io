@@ -34,50 +34,39 @@
         </nav>
         <main>
             <form class="form">
-                <div id="locationField">
-                    <label for="locationField">Search for a location: </label>
-                    <input type="text" id="locationField">
-                </div>
-                <div id="dateField">
-                    <label for="dateField">Dates of stay: </label>
-                    <input type="date" id="dateField">
-                </div>
-                <div id="numberOfRoomsField">
-                    <label for="numberOfRooms">Number of rooms: </label>
-                    <input type="number" id="numberOfRooms" required>
-                </div>
-                <div id="roomTypeField">
-                    <label for="roomTypeField">Type of rooms: </label>
-                    <input list="roomTypes" id="roomTypeField">
-                    <datalist id="roomType">
-                        <option value="Two Twins">
-                        <option value="Single Queen">
-                        <option value="Two Queens">
-                        <option value="Single Kind">
-                    </datalist>
-                </div>
-                <div id="fullnameField">
-                    <label for="fullname">Full name: </label>
-                    <input type="text" id="fullname" required>
-                </div>
-                 <div id="emailField">
-                    <label for="email">Email address: </label>
-                    <input type="email" id="email" placeholder="deseret@templeinn.com">
-                </div>
-                <div id="phoneNumberField">
-                    <label for="phoneNumber">Phone number: </label>
-                    <input type="tel" id="phoneNumber" required>
-                </div>
-                <div id="stateCountryField">
-                    <label for="stateCountryField">State or Country: </label>
-                    <input type="text" id="stateCountryField">
-                </div>
-                <div id="commentsField">
-                    <label for="commentsField">Special Accommodations or Comments: </label>
-                </div>
-                    <textarea id="commentsField"></textarea>
-                
+                <label for="locationField">Search for a location: </label>
+                <input type="text" id="locationField">
+            
+                <label for="dateField">Dates of stay: </label>
+                <input type="date" id="dateField">
+            
+                <label for="numberOfRooms">Number of rooms: </label>
+                <input type="number" id="numberOfRooms" required>
+           
+                <label for="roomTypeField">Type of rooms: </label>
+                <input list="roomTypes" id="roomTypeField">
 
+                <datalist id="roomType">
+                    <option value="Two Twins">
+                    <option value="Single Queen">
+                    <option value="Two Queens">
+                    <option value="Single Kind">
+                </datalist>
+            
+                <label for="fullname">Full name: </label>
+                <input type="text" id="fullname" required>
+            
+                <label for="email">Email address: </label>
+                <input type="email" id="email" placeholder="deseret@templeinn.com">
+            
+                <label for="phoneNumber">Phone number: </label>
+                <input type="tel" id="phoneNumber" required>
+           
+                <label for="stateCountryField">State or Country: </label>
+                <input type="text" id="stateCountryField">
+            
+                <label for="commentsField">Special Accommodations or Comments: </label>
+                <textarea id="commentsField"></textarea>
 
                 <button type="submit" id="submitButton">Submit</button>
             </form>
