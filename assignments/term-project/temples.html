@@ -35,17 +35,6 @@
             <p>&copy; 2019 Temple Inn & Suites | Attributions | Created by Transier Consulting</p>
         </footer>
 
-
-
-
-
-
-
-
-
-
-
-
         <script>
         let section = document.querySelector('section');
         
@@ -72,6 +61,12 @@
                 let myPara2 = document.createElement('p');
                 let myPara3 = document.createElement('p');
                 let myList = document.createElement('ul');
+                let myPara4 = document.createElement('p');
+                let myList2 = document.createElement('ul');
+                let myPara5 = document.createElement('p');
+                let myList3 = document.createElement('ul');
+                let myPara6 = document.createElement('p');
+                let myPara7 = document.createElement('p');
 
                 myH2.textContent = temple[i].templeName;
                 myPara1.textContent = 'Address: ' + temple[i].address;
@@ -85,11 +80,38 @@
                     myList.appendChild(listItem);
                 }
 
+                myPara4.textContent = 'Session Schedule: ';
+                
+                let scheduleList = temple[i].sessionSchedule;
+                for (let j = 0; j < scheduleList.length; j++) {
+                    let listItem = document.createElement('li');
+                    listItem.textContent = scheduleList[j];
+                    myList2.appendChild(listItem);
+                }
+
+                myPara5.textContent = 'Closure Schedule: ';
+                
+                let closureList = temple[i].closureSchedule;
+                for (let j = 0; j < closureList.length; j++) {
+                    let listItem = document.createElement('li');
+                    listItem.textContent = closureList[j];
+                    myList3.appendChild(listItem);
+                }
+
+                myPara6.textContent = 'History: ' + temple[i].history;
+                myPara7.textContent = 'Weather: ' + temple[i].weather;
+
                 myArticle.appendChild(myH2);
                 myArticle.appendChild(myPara1);
                 myArticle.appendChild(myPara2);
                 myArticle.appendChild(myPara3);
                 myArticle.appendChild(myList);
+                myArticle.appendChild(myPara4);
+                myArticle.appendChild(myList2);
+                myArticle.appendChild(myPara5);
+                myArticle.appendChild(myList3);
+                myArticle.appendChild(myPara6);
+                myArticle.appendChild(myPara7);
 
                 section.appendChild(myArticle);
             }

@@ -1,27 +1,30 @@
 {
   "temples" : [
     {
-      "templeName" : "Molecule Man",
-      "address" : 29,
-      "telephone" : "Dan Jukes",
+      "templeName" : "Seattle Washington Temple",
+      "address" : "2808 148th Ave SE, Bellevue, WA 98007",
+      "telephone" : "425-643-5144",
       "services" : [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
       ],
-      "history" : "Dan Jukes",
       "sessionSchedule" : [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
+        "Tuesday: 5:30am, 6:30am, every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Wednesay: 5:30am, 8:00am, every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Thursday and Friday: 8:00am, then every hour until 6:00pm, 6:30pm, 7:00pm, 7:30pm",
+        "Saturday: Every 30 minutes from 6:00am to 7:30pm"
       ],
       "closureSchedule" : [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
+        "Thursday, 4 July 2019",
+        "Sunday, 18 August 2019 - Monday, 2 September 2019",
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
       ],
-      "summary" : "Here's the text of the summary",
-      "currentWeather" : "Current weather info"
+      "history" : "Announced in 1975 and dedicated in 1980.",
+      "currentWeather" : "70º Sunny"
     },
     {
       "name" : "Madame Uppercut",
